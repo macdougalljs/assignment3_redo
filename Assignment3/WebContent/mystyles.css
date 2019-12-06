@@ -1,0 +1,125 @@
+/* CSS FILE FOR ASSIGNMENT 3
+	<!--  Assignment 3 - Jeremiah MacDougall & Tavlin Sekhon -->
+
+Background Photo. (n.d.). Retrieved from https://wallhere.com/en/wallpaper/56755
+
+ */
+body {
+	background-image: url("images/stripes.jpg");
+	background-color: lightblue;
+	background-repeat: repeat;
+	background-size: auto;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+img {
+	width: 99%;
+	height: auto;
+	border-radius: 25px;
+	
+}
+
+.container {
+	grid-template-columns: 30% 70%;
+	display: grid;
+	grid-template-areas: "header header" "left right" "error error"
+		"footer footer";
+}
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+	width: 70%;
+	
+}
+
+th {
+	background-color: #c0c0c0;
+}
+
+td, th {
+	border: 2px solid black;
+	color: black;
+	padding: 7px;
+	
+} 
+tr:nth-child(odd) {
+	color: black;
+	background-color: white;
+	
+}
+
+tr:nth-child(even) {
+	color: yellow;
+	background-color: #3096d1;
+	
+}
+
+.left {
+	margin-left: auto;
+	margin-right: auto;
+	grid-area: left;
+	text-align: left;
+	
+}
+
+.right {
+	text-align: left;
+	grid-area: right;
+
+}
+
+.error {
+	grid-area: error;
+	text-align: center;
+}
+
+.left, .right, .error {
+	line-height: 20px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 25px;
+	grid-gap: 5px;
+	grid-row-gap: 5px;
+	margin: 5px;
+	grid-column-gap: 5px;
+
+}
+
+div {
+	padding: 15px 15px 15px 15px;
+}
+
+.header {
+	border-radius: 25px;
+	
+	text-align: center;
+	margin: 2px;
+	grid-column-gap: 2px;
+	line-height: 25px;
+	background-color: #43a0d6;
+	color: white;
+	text-shadow: 1px 1px black;
+	border: 1px solid black;
+	grid-area: header;
+	grid-gap: 2px;
+	grid-row-gap: 2px;
+}
+
+.footer {
+	border-radius: 25px;
+	grid-area: footer;
+	grid-gap: 2px;
+	grid-row-gap: 2px;
+	text-align: center;
+	margin: 2px;
+	grid-column-gap: 2px;
+	line-height: 25px;
+	background-color: #43a0d6;
+	color: white;
+	text-shadow: 2px 2px black;
+	border: 1px solid black;
+}
