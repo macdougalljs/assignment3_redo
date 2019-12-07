@@ -123,3 +123,14 @@ div {
 	text-shadow: 2px 2px black;
 	border: 1px solid black;
 }
+
+@media all and (max-width: 575px) {
+    .container {
+      grid-template-areas: 
+      "header"
+      "left" 
+      "right"
+      "error"
+      "footer";
+      grid-template-columns: 1fr;
+    }
